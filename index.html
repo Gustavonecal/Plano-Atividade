@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TaskFlow Acadêmico</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>TaskFlow Acadêmico</h1>
+      <p>Organize tarefas, prazos e prioridades de forma simples.</p>
+    </header>
+
+    <section class="card">
+      <form id="taskForm">
+        <div class="grid">
+          <label>
+            Tarefa
+            <input id="title" type="text" placeholder="Ex.: Entregar PGCS" required maxlength="80" />
+          </label>
+
+          <label>
+            Prazo
+            <input id="dueDate" type="date" required />
+          </label>
+
+          <label>
+            Prioridade
+            <select id="priority">
+              <option value="Baixa">Baixa</option>
+              <option value="Média" selected>Média</option>
+              <option value="Alta">Alta</option>
+            </select>
+          </label>
+        </div>
+
+        <button type="submit">Adicionar tarefa</button>
+      </form>
+    </section>
+
+    <section class="toolbar">
+      <label>
+        Filtrar
+        <select id="filter">
+          <option value="todas">Todas</option>
+          <option value="pendentes">Pendentes</option>
+          <option value="concluidas">Concluídas</option>
+        </select>
+      </label>
+      <button id="clearCompleted" class="secondary">Limpar concluídas</button>
+    </section>
+
+    <section class="card">
+      <div id="summary" class="summary"></div>
+      <ul id="taskList" class="task-list"></ul>
+      <p id="emptyState" class="empty">Nenhuma tarefa cadastrada.</p>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
