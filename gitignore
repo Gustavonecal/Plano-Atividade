@@ -1,0 +1,11 @@
+# Sistema operacional / editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
+
+# Variáveis de ambiente locais: nunca versionar segredos
+.env
+.env.*
+!.env.example
