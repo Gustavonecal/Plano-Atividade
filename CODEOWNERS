@@ -1,0 +1,10 @@
+# Revisores automáticos por área (plano de GCS, seções 2 e 5).
+#
+# @GhostBLK é o par de revisão: é chamado em todo Pull Request.
+# Mudanças em arquivos do próprio processo (.github e docs) também chamam
+# o Desenvolvedor Líder (@Gustavonecal).
+# Vale a ÚLTIMA linha que casar com o arquivo.
+
+*             @GhostBLK
+/.github/     @Gustavonecal @GhostBLK
+/docs/        @Gustavonecal @GhostBLK
